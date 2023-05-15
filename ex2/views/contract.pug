@@ -1,0 +1,37 @@
+extends layout
+
+block content
+    w3-card-4
+        .header.w3-container.w3-teal
+            h1 Contrato #{contract._id}
+
+        .w3-container
+            li #[b Instituição:] #{contract.NomeInstituicao}
+            li #[b NIPC:] #{contract.NIPCInstituicao}
+            li #[b Nome do Titular:] #{contract.NomeTitularContrato}
+            li #[b Ciencia ID] #{contract.CienciaID}
+            li #[b ORCID] #{contract.ORCID}
+            li #[a(href="https://"+contract.CienciaVitae) #[b Curriculo Vitae]]
+            li #[b Carreira RPN] #{contract.Carreira_RPN}
+            li #[b Categoria RPN] #{contract.Categoria_RPN}
+            li #[b Vinculo RPN] #{contract.Vinculo_RPN}
+            li #[b Regime de Prestação de Serviço] #{contract.RegimePrestacaoServico}
+            li #[b Data de Inicio do Contrato] #{contract.DataInicioContrato}
+            li #[b Data de Fim do Contrato] #{contract.DataFimContrato}
+            li #[b ETI Remunerado] #{contract.ETIremunerado}
+            li #[b Procedimento de Vinculação] #{contract.ProcedimentoVinculacao}
+            li #[b Areas de Investigação] #{contract.AreasInvestigacao}
+            li #[b Nivel de Formação] #{contract.NivelFormacao}
+            li #[b Instituição de Ensino] #{contract.InstituicaoEnsino}
+            li #[b País da Instituição] #{contract.PaisInstituicao}
+            li #[b Ano de obtenção do Diploma] #{contract.AnoDiploma}
+            li #[b Curso] #{contract.Curso}
+            li #[b Area CNAEF] #{contract.AreaCNAEF}
+            li #[b Area FORD] #{contract.AreaFORD}
+            li #[b Provas de Agregação] #{contract.ProvasAgregacao}
+            li #[b Títulos de Especialista] #{contract.TitulosEspecialista}
+            li #[b TProvas de Coordenação] #{contract.ProvasCoordenacao}
+            li #[b Provas de Aptidão] #{contract.ProvasAptidao}
+
+        .footer.w3-container.w3-teal
+            h5 Voltar ao #[a(href="/") inicio]
